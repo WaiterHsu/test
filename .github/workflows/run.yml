@@ -24,7 +24,7 @@ jobs:
          run:
             pip install requests
             pip install selenium
-            pip install webdrivermanager
+            pip install webdriver_manager
       -  name: 'Run baiduPush' # 步骤二，执行sh命令文件
          run: 
             python test.py
