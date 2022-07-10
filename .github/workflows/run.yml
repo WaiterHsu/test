@@ -22,8 +22,10 @@ jobs:
             python-version: '3.8' 
       -  name: Install dependencies
          run:
+            python -m pip install --upgrade pip
             pip install requests
             pip install rpa
+            
       -  name: 'Run baiduPush' # 步骤二，执行sh命令文件
          run: 
             python test.py
