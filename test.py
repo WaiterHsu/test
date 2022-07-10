@@ -5,8 +5,8 @@ import requests
 import json
 import math
 
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+#from selenium import webdriver
+#from webdriver_manager.chrome import ChromeDriverManager
 from RPA.Browser.Selenium import Selenium
 
 
