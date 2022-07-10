@@ -10,10 +10,11 @@ name: baiduPush
 on:
    schedule:
      - cron: '*/60 * * * *' # 每5分钟一次，测试用
-
+# macOS-latest
+# ubuntu-latest
 jobs:
   bot:
-    runs-on: ubuntu-latest # 运行环境为最新版的Ubuntu
+    runs-on:  macOS-latest # 運行環境
     steps:
       -  uses: actions/checkout@v1
       -  name: Set up Python 3.8
@@ -23,8 +24,8 @@ jobs:
       -  name: Install dependencies
          run:
             python -m pip install --upgrade pip
-            pip install requests
-            pip install rpa
+            pip3 install requests
+            pip3 install rpa
             
       -  name: 'Run baiduPush' # 步骤二，执行sh命令文件
          run: 
