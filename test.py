@@ -28,10 +28,25 @@ lib.close_browser()
 print(out)
 
 try:
-  with open('未命名.txt','r') as wf:
-    print(wf.readlines())
+  with open('未命名.txt','r') as rf:
+    print(rf.readlines())
   print('未命名')
 except:
   with open('未命名1.txt','r') as wf:
     print(wf.readlines())
   print('未命名1')
+  
+  
+
+from datetime import datetime
+a = datetime.now()
+
+try:
+  with open('未命名.txt','w') as wf:
+    wf.write(a)
+except:
+  print('error')
+
+  
+
+
