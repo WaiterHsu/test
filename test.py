@@ -40,10 +40,10 @@ except:
 
 from datetime import datetime
 a = datetime.now()
-
+print(a)
 try:
   with open('未命名.txt','w') as wf:
-    wf.write(a)
+    wf.write('haha')
 except:
   print('error')
 
