@@ -27,6 +27,11 @@ out = lib.get_text('//*[@id="predict_form"]/table/tbody/tr[4]/td[1]/div/span/str
 lib.close_browser()
 print(out)
 
-with open('未命名.txt','r') as 'wf':
-  print(wf.readlines())
-  
+try:
+  with open('未命名.txt','r') as 'wf':
+    print(wf.readlines())
+  print('未命名')
+except:
+  with open('未命名1.txt','r') as 'wf':
+    print(wf.readlines())
+  print('未命名1')
