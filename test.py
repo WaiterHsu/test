@@ -28,10 +28,10 @@ lib.close_browser()
 print(out)
 
 try:
-  with open('未命名.txt','r') as 'wf':
+  with open('未命名.txt','r') as wf:
     print(wf.readlines())
   print('未命名')
 except:
-  with open('未命名1.txt','r') as 'wf':
+  with open('未命名1.txt','r') as wf:
     print(wf.readlines())
   print('未命名1')
