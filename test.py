@@ -22,7 +22,7 @@ from RPA.Browser.Selenium import Selenium
 
 lib = Selenium()
 
-lib.open_available_browser('https://www.playsport.cc/predictgame.php?allianceid=1')
+lib.open_available_browser('https://www.playsport.cc/predictgame.php?allianceid=1&gameday=today')
 out = lib.get_text('//*[@id="predict_form"]/table/tbody/tr[4]/td[1]/div/span/strong')
 lib.close_browser()
 print(out)
