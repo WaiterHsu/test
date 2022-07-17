@@ -9,7 +9,9 @@ name: baiduPush
 #    - cron: '0 23 * * *'
 on:
    schedule:
-     - cron: '*/60 * * * *' # 每5分钟一次，测试用
+     - cron: '0 23 * * *
+
+#- cron: '*/60 * * * *' # 每5分钟一次，测试用
 # macOS-latest
 # ubuntu-latest
 jobs:
