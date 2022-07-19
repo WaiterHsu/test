@@ -6,13 +6,11 @@ name: baiduPush
 #on:
 #  push:
 #  schedule:
-#    - cron: '0 23 * * *'
+#    - cron: '*/60 * * * *'
 on:
    schedule:
      - cron: '0 23 * * *
 
-# 1234
-# cron: '*/60 * * * *' # 每5分钟一次，测试用
 # macOS-latest
 # ubuntu-latest
 jobs:
