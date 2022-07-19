@@ -6,10 +6,10 @@ name: baiduPush
 #on:
 #  push:
 #  schedule:
-#    - cron: '*/60 * * * *'
+#    - cron: '*/60 * * * *' 
 on:
    schedule:
-     - cron: '0 23 * * *
+     - cron: '0 23 * * *'
 
 # macOS-latest
 # ubuntu-latest
