@@ -28,6 +28,7 @@ jobs:
             pip install requests
             pip install rpa
             pip install rpaframework
+            pip install GitPython
             
       -  name: 'Run baiduPush' # 步骤二，执行sh命令文件
          run: 
