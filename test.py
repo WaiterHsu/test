@@ -5,6 +5,9 @@ import requests
 import json
 import math
 
+import git
+repo = git.Repo.init(path='.')
+
 #from selenium import webdriver
 #from webdriver_manager.chrome import ChromeDriverManager
 from RPA.Browser.Selenium import Selenium
@@ -43,10 +46,15 @@ a = datetime.now()
 print(a)
 try:
   with open('未命名.txt','w') as wf:
-    wf.write('haha')
+    wf.write(out)
 except:
-  print('error')
+  print('error in write new thing.')
 
-  
+try:
+    repo.index.add(items=['未命名.txt'])
+    repo.index.commit('write a line into test.file')
+except:
+    print('error in git push')
+
 
 
