@@ -10,7 +10,8 @@ on:
    push:
    
    schedule:
-     - cron: '*/10 * * * *' 
+      - cron: '10 30 * * *'
+      
 # 運行環境
 # macOS-latest
 # windows-latest
@@ -45,9 +46,8 @@ jobs:                                     #可擁有多個 jobs
       - run: git commit -m "change"
       - run: git status
       
-      - run: git remote add origin 'https://github.com/WaiterHsu/test_action'
       - name: 'key code'
-        run: git push -u origin master
+        run: git push -f
       
       
       
