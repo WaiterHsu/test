@@ -7,9 +7,10 @@ name: baiduPush
 #  push:
 #  schedule:
 #    - cron: '*/60 * * * *' 
+#    - cron: '00 10 * * *'
 on:
    schedule:
-     - cron: '00 10 * * *'
+     - cron: '*/30 * * * *' 
 
 # macOS-latest
 # ubuntu-latest
