@@ -32,6 +32,8 @@ jobs:                                     #可擁有多個 jobs
             pip install rpaframework
             pip install GitPython
             
+      -  run: git init
+      
       -  name: 'Run python'   # 步驟四，執行py檔
          run: 
             python test.py
@@ -39,4 +41,8 @@ jobs:                                     #可擁有多個 jobs
 #             pip install selenium
 #             pip install webdriver_manager
 
+      - run: git add 未命名.txt
+      - run: git commit -m "change"
+      
+      
         
