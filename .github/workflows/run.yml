@@ -35,7 +35,7 @@ jobs:                                     #可擁有多個 jobs
       #- run: git remote add origin https://github.com/WaiterHsu/test_action.git
       #-  run: git init
       - run: git init
-      - run: git config --global url "git@github.com:WaiterHsu/test_action.git"
+      - run: git config --global URL "git@github.com:WaiterHsu/test_action.git"
       - run: git checkout main
       
       
