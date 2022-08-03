@@ -2,7 +2,7 @@
 
 name: baiduPush
 
-# 两种触发方式：一、push代码，二、每天国际标准时间23点（北京时间+8即早上7点）运行
+# 两種觸發方式：一、push代碼，二、每天國際標準時間 固定運行
 #on:
 #  push:
 #  schedule:
@@ -19,8 +19,8 @@ jobs:
     runs-on:  macOS-latest # 運行環境
     steps:
       -  uses: actions/checkout@v1
-      -  name: Set up Python 3.9
-         uses: actions/setup-python@v1 
+      -  name: Set up Python 3.9          #步驟 名稱
+         uses: actions/setup-python@v1    #設置 python 環境
          with:
             python-version: '3.9.13' 
       -  name: Install dependencies
@@ -31,7 +31,7 @@ jobs:
             pip install rpaframework
             pip install GitPython
             
-      -  name: 'Run baiduPush' # 步骤二，执行sh命令文件
+      -  name: 'Run baiduPush' # 步驟二，執行py檔
          run: 
             python test.py
             
