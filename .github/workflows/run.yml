@@ -32,8 +32,8 @@ jobs:                                     #可擁有多個 jobs
             pip install rpa
             pip install rpaframework
             pip install GitPython
-            
-      -  run: git init
+      - run: git remote add origin git@github.com:WaiterHsu/test_action.git
+      #-  run: git init
       
       -  name: 'Run python'   # 步驟四，執行py檔
          run: 
@@ -46,7 +46,7 @@ jobs:                                     #可擁有多個 jobs
       - run: git commit -m "change"
       - run: git status
       
-      - run: git remote add origin git@github.com:WaiterHsu/test_action.git
+
       - name: 'key code'
         #run: git push -f origin main
         run: git push -u origin master
