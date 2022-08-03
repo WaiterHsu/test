@@ -35,16 +35,16 @@ jobs:                                     #可擁有多個 jobs
       #- run: git remote add origin https://github.com/WaiterHsu/test_action.git
       #-  run: git init
       - run: git init
-      - run: git config --global URL "git@github.com:WaiterHsu/test_action.git"
       - run: git checkout main
+#       - run: git config --global URL "git@github.com:WaiterHsu/test_action.git"
       
       
-      -  name: 'Run python'   # 步驟四，執行py檔
-         run: 
-            python test.py
+#       -  name: 'Run python'   # 步驟四，執行py檔
+#          run: 
+#             python test.py
             
-#             pip install selenium
-#             pip install webdriver_manager
+# #             pip install selenium
+# #             pip install webdriver_manager
 
       - run: git add 未命名.txt
       - run: git commit -m "change"
