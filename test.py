@@ -4,7 +4,7 @@ import json
 import math
 
 import git
-repo = git.Repo.init(path='.')
+'''repo = git.Repo.init(path='.')'''
 
 #from selenium import webdriver
 #from webdriver_manager.chrome import ChromeDriverManager
@@ -53,12 +53,13 @@ except:
   
   
 #嘗試用git 更改檔案
+'''
 try:
     repo.index.add(items=['未命名.txt'])
     repo.index.commit('write a line into test.file')
     print('successful')
 except:
     print('error in git push')
-
+'''
 
 
