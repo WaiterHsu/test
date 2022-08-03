@@ -10,7 +10,7 @@ on:
    push:
    
    schedule:
-     - cron: '*/2 * * * *' 
+     - cron: '*/10 * * * *' 
 # 運行環境
 # macOS-latest
 # windows-latest
