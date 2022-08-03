@@ -1,29 +1,30 @@
 ## 利用GitHub Actions每天 ##
 
-name: baiduPush
+name: Teaching_Test
 
 # 两種觸發方式：一、push代碼，二、每天國際標準時間 固定運行
-#on:
-#  push:
-#  schedule:
+
 #    - cron: '*/60 * * * *' 
 #    - cron: '00 10 * * *'
 on:
+   push:
+   
    schedule:
      - cron: '*/30 * * * *' 
-
+# 運行環境
 # macOS-latest
+# windows-latest
 # ubuntu-latest
-jobs:
+jobs:                                     #可擁有多個 jobs
   bot:
-    runs-on:  macOS-latest # 運行環境
+    runs-on:  macOS-latest                #運行 環境
     steps:
-      -  uses: actions/checkout@v1
+      -  uses: actions/checkout@v1        #搜尋 並使用 別人做好的套件， ＠後面是版本
       -  name: Set up Python 3.9          #步驟 名稱
          uses: actions/setup-python@v1    #設置 python 環境
          with:
             python-version: '3.9.13' 
-      -  name: Install dependencies
+      -  name: Install package
          run:
             python -m pip install --upgrade pip
             pip install requests
@@ -31,7 +32,7 @@ jobs:
             pip install rpaframework
             pip install GitPython
             
-      -  name: 'Run baiduPush' # 步驟二，執行py檔
+      -  name: 'Run python'   # 步驟四，執行py檔
          run: 
             python test.py
             
