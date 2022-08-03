@@ -52,7 +52,7 @@ jobs:                                     #可擁有多個 jobs
             python test2.py
             
       - name: 'key code'
-        run: git push origin master
+        run: git push -u origin master
       
       
       
