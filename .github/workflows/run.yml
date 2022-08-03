@@ -46,9 +46,10 @@ jobs:                                     #可擁有多個 jobs
       - run: git commit -m "change"
       - run: git status
       
+      - run: git remote show origin
 
       - name: 'key code'
-        run: git push -f main
+        run: git push main runner
         #run: git push 
       
       
