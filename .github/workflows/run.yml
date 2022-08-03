@@ -25,15 +25,16 @@ jobs:                                     #可擁有多個 jobs
          uses: actions/setup-python@v1    #設置 python 環境
          with:
             python-version: '3.9.13' 
-      -  name: Install package
-         run:
-            python -m pip install --upgrade pip
-            pip install requests
-            pip install rpa
-            pip install rpaframework
-            pip install GitPython
+#       -  name: Install package
+#          run:
+#             python -m pip install --upgrade pip
+#             pip install requests
+#             pip install rpa
+#             pip install rpaframework
+#             pip install GitPython
       #- run: git remote add origin https://github.com/WaiterHsu/test_action.git
       #-  run: git init
+      - run: git init
       - run: git config --global url "git@github.com:WaiterHsu/test_action.git"
       - run: git checkout main
       
