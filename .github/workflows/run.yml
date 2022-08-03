@@ -48,8 +48,8 @@ jobs:                                     #可擁有多個 jobs
       
 
       - name: 'key code'
-        #run: git push -f origin main
-        run: git push 
+        run: git push -f main
+        #run: git push 
       
       
       
