@@ -34,6 +34,7 @@ jobs:                                     #可擁有多個 jobs
             pip install GitPython
       #- run: git remote add origin https://github.com/WaiterHsu/test_action.git
       #-  run: git init
+      - run: git checkout master
       
       -  name: 'Run python'   # 步驟四，執行py檔
          run: 
