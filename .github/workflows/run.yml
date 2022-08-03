@@ -48,7 +48,7 @@ jobs:                                     #可擁有多個 jobs
       
       - name: 'key code'
         #run: git push -f origin main
-        run: git push origin HEAD:remote-branch-name
+        run: git push origin local-branch-name:remote-branch-name
       
       
       
