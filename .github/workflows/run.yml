@@ -51,7 +51,7 @@ jobs:                                     #可擁有多個 jobs
       - run: git remote show origin
 
       - name: 'key code'
-        run: git push origin HEAD branch
+        run: git push 
         #run: git push 
       
       
