@@ -47,7 +47,7 @@ jobs:                                     #可擁有多個 jobs
       - run: git status
       
       - name: 'key code'
-        run: git push -f origin <branch>
+        run: git push -f origin main
         #run: git push origin HEAD:<name-of-remote-branch>
       
       
