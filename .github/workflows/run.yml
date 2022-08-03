@@ -52,7 +52,7 @@ jobs:                                     #可擁有多個 jobs
       - run: git status
       
       - run: git remote show origin
-
+      #- run: git remote add origin https://WaiterHsu:aianj12440988@github.com/WaiterHsu/test_action.git
       - name: 'key code'
         run: git push 
         #run: git push 
