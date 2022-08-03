@@ -1,5 +1,3 @@
-print('hello world, haha')
-
 import time
 import requests
 import json
@@ -12,6 +10,11 @@ repo = git.Repo.init(path='.')
 #from webdriver_manager.chrome import ChromeDriverManager
 from RPA.Browser.Selenium import Selenium
 
+#讀取 現在時間
+from datetime import datetime
+a = datetime.now()
+print(a)
+
 
 # driver = webdriver.Chrome(ChromeDriverManager().install())
 # driver.get('https://shopee.tw/flash_sale')
@@ -23,6 +26,7 @@ from RPA.Browser.Selenium import Selenium
 
 # driver.close()
 
+#爬蟲
 lib = Selenium()
 
 lib.open_available_browser('https://www.playsport.cc/predictgame.php?allianceid=1&gameday=yesterday')
@@ -30,6 +34,14 @@ out = lib.get_text('//*[@id="predict_form"]/table/tbody/tr[3]/td[2]/table/tbody/
 lib.close_browser()
 print(out)
 
+#把 資訊 塞進 txt
+try:
+  with open('未命名.txt','w') as wf:
+    wf.write(out)
+except:
+  print('error in write new thing.')
+  
+# 讀取新的txt 看是否有改變
 try:
   with open('未命名.txt','r') as rf:
     print(rf.readlines())
@@ -40,19 +52,11 @@ except:
   print('未命名1')
   
   
-
-from datetime import datetime
-a = datetime.now()
-print(a)
-try:
-  with open('未命名.txt','w') as wf:
-    wf.write(out)
-except:
-  print('error in write new thing.')
-
+#嘗試用git 更改檔案
 try:
     repo.index.add(items=['未命名.txt'])
     repo.index.commit('write a line into test.file')
+    print('successful')
 except:
     print('error in git push')
 
