@@ -47,5 +47,10 @@ jobs:                                     #可擁有多個 jobs
       - run: git commit -m "change"
       - run: git status
       
+      - name: 'test read 未命名'
+        run:
+            python test2.py
+      
+      
       
         
