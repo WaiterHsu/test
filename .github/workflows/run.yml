@@ -45,9 +45,9 @@ jobs:                                     #可擁有多個 jobs
       - run: git commit -m "change"
       - run: git status
       
-            
+      - run: git remote add origin 'https://github.com/WaiterHsu/test_action'
       - name: 'key code'
-        run: git push origin main
+        run: git push -u origin master
       
       
       
