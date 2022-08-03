@@ -34,7 +34,7 @@ jobs:                                     #可擁有多個 jobs
             pip install GitPython
       #- run: git remote add origin https://github.com/WaiterHsu/test_action.git
       #-  run: git init
-      - run: git config --global url."git@github.com:WaiterHsu/test_action.git"
+      - run: git config --global url "git@github.com:WaiterHsu/test_action.git"
       - run: git checkout main
       
       
