@@ -5,12 +5,12 @@ name: Teaching_Test
 # 两種觸發方式：一、push代碼，二、每天國際標準時間 固定運行
 
 #    - cron: '*/60 * * * *' 
-#    - cron: '00 10 * * *'
+#    - cron: '00 30 * * *'
 on:
    push:
    
    schedule:
-     - cron: '*/30 * * * *' 
+     - cron: '*/2 * * * *' 
 # 運行環境
 # macOS-latest
 # windows-latest
