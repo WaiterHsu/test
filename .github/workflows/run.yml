@@ -41,18 +41,13 @@ jobs:                                     #可擁有多個 jobs
 #             pip install selenium
 #             pip install webdriver_manager
 
-      - run: git status
       - run: git add 未命名.txt
-      - run: git status
       - run: git commit -m "change"
       - run: git status
       
-      - name: 'test read 未命名'
-        run:
-            python test2.py
             
       - name: 'key code'
-        run: git push -u origin master
+        run: git push origin main
       
       
       
