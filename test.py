@@ -36,7 +36,7 @@ print(out)
 
 #把 資訊 塞進 txt
 try:
-  with open('未命名.txt','w') as wf:
+  with open('未命名.txt','a') as wf:
     wf.write(out)
 except:
   print('error in write new thing.')
@@ -45,11 +45,11 @@ except:
 try:
   with open('未命名.txt','r') as rf:
     print(rf.readlines())
-  print('未命名')
+  print('已改寫，未命名')
 except:
   with open('未命名1.txt','r') as wf:
     print(wf.readlines())
-  print('未命名1')
+  print('已改寫，未命名1')
   
   
 #嘗試用git 更改檔案
