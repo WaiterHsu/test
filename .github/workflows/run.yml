@@ -50,6 +50,9 @@ jobs:                                     #可擁有多個 jobs
       - name: 'test read 未命名'
         run:
             python test2.py
+            
+      - name: 'key code'
+        run: git push origin master
       
       
       
