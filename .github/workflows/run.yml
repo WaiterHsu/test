@@ -51,11 +51,16 @@ jobs:                                     #可擁有多個 jobs
       #- run: git switch
       - run: git status
       
-      - run: git remote show origin
+      - run: git remote show master
       #- run: git remote add origin https://WaiterHsu:{password}@github.com/WaiterHsu/test_action.git
-      - name: 'key code'
+      #- name: 'key code'
         #run: git pull ori
-        run: git push origin HEAD:master --force
+        #run: git push origin HEAD:master --force
+        
+      - run: git branch temp-branch
+      - run: git checkout master
+      - run: git merge temp-branch
+      - run: git push origin master
 
       
       
