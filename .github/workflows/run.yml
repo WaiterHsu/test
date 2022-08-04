@@ -55,7 +55,8 @@ jobs:                                     #可擁有多個 jobs
       #- run: git remote add origin https://WaiterHsu:{password}@github.com/WaiterHsu/test_action.git
       - name: 'key code'
         #run: git pull ori
-        run: git push -u origin
+        run: git push origin HEAD:master --force
+
       
       
       
