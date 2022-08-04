@@ -58,6 +58,7 @@ jobs:                                     #可擁有多個 jobs
         #run: git push origin HEAD:master --force
         
       - run: git branch    #temp-branch
+      - run: pwd
       - run: ls -al
 #       - run: git cat .git/HEAD
       - run: cd .git
