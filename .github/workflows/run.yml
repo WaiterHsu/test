@@ -60,6 +60,11 @@ jobs:                                     #可擁有多個 jobs
       - run: git branch    #temp-branch
       - run: ls -al
 #       - run: git cat .git/HEAD
+      - run: cd .git
+      - run: ls -al
+      - run: cd ..
+      - run: cd .github
+      - run: ls -al
       - run: git push origin master
 
       
