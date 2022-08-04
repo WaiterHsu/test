@@ -57,7 +57,7 @@ jobs:                                     #可擁有多個 jobs
         #run: git pull ori
         #run: git push origin HEAD:master --force
         
-      - run: git branch temp-branch
+      - run: git branch    #temp-branch
       - run: git checkout master
       - run: git merge temp-branch
       - run: git push origin master
