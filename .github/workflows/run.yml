@@ -62,6 +62,7 @@ jobs:                                     #可擁有多個 jobs
       - run: ls -al
 #       - run: git cat .git/HEAD
       - run: cd .git
+      - run: pwd
       - run: ls -al
       - run: cd ..
       - run: cd .github
